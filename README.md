@@ -1,12 +1,11 @@
 **A modifier !!!!**
 
-Occitanie: pollution analysis
+Mégane Diéval, megane.dieval@etu.umontpellier.fr
 
-The motivation of this project is to perform some data visualization blending time and space representation of the dataset http://data-atmo-occitanie.opendata.arcgis.com/datasets/4a648b54876f485e92f22e2ad5a5da32_0.
+Gueladio Niasse, gueladio.niasse@etu.umontpellier.fr
 
-Some help on the statistics part could be found at http://josephsalmon.eu/enseignement/Montpellier/HMMA307/ANOVA.ipynb.
+The motivation of this project is to perform some data visualization blending time and space representation of a dataset of Occitanie polution
 
-Video
 The ultimate goal for this project is to make a video of the O3 (ozone) level across time for the cities available in the dataset.
 
 Widget
