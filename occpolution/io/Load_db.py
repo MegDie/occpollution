@@ -1,6 +1,6 @@
 import pandas as pd
 from download import download
-from occpollution.io import url_db, path_target
+from occpolution.io import url_db, path_target
 
 
 
@@ -10,5 +10,5 @@ class Load_db:
   
   @staticmethod
   def save_as_df():
-    df_occ = pd.read_csv(path_target, na_values="", low_memory=False, converters={'nom_station': str, 'date': str})
+    df_occ = pd.read_csv(path_target, na_values="", low_memory=False)
     return df_occ
