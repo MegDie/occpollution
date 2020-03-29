@@ -19,12 +19,16 @@ Analysis jointly of the data from Montpellier and Paris (Paris 13ème)
 
 # Structure
 
-  + In the `\beamer` folder, you will find soon a presentation of this work
+In the `\beamer` folder, you will find soon a presentation of this work
 
-  + The `\report` folder contains a jupyter notebook to display different elements like widgets and soon data visualization by interactive histrograms
+The `\doc` report will contain some documentation about this project
 
-  + The report `\occpolution` will contain a package python showing widgets and interactive maps showing polution data of Occitanie 
+The `\report` folder contains some jupyter notebooks to display different elements like widgets, maps and soon data visualization by interactive histrograms and some analysis (using ANOVA)
 
+The report `\occpolution` will contain a package python deploying widgets and interactive maps showing pollution data of Occitanie, it is made of the subfolders:
+  + `.\ani` will display a video showing the evolution of ozone pollution per dey in Occitanie 
+  + `.\map` will display an interactive map showing the level of ozone in Occitanie for a day/month we choose
+  + `.\widget` will display widgets comparing the level of ozone of three cities
 
 # (Co)worker(s)
 
@@ -32,4 +36,4 @@ Mégane Diéval, `megane.dieval@etu.umontpellier.fr`
 
 Gueladio Niasse, `gueladio.niasse@etu.umontpellier.fr`
 
-Jean-Baptiste Elucson
+Jean-Baptiste Elucson,
