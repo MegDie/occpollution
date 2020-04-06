@@ -8,5 +8,5 @@ class Load_db:
   
   @staticmethod
   def save_as_df():
-    df_occ = pd.read_csv(path_target, na_values="", low_memory=False)
+    df_occ = pd.read_csv(path_target)
     return df_occ
