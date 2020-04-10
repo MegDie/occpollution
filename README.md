@@ -32,8 +32,8 @@ The report `\occpolution` will contain a package python deploying widgets and in
 
 # (Co)worker(s)
 
-    Mégane Diéval, `megane.dieval@etu.umontpellier.fr`
+    Mégane Diéval, megane.dieval@etu.umontpellier.fr
 
-    Gueladio Niasse, `gueladio.niasse@etu.umontpellier.fr`
+    Gueladio Niasse, gueladio.niasse@etu.umontpellier.fr
 
-    Jean-Baptiste Elucson, `jean-baptise.elucson@etu.umontpellier.fr`
+    Jean-Baptiste Elucson, jean-baptise.elucson@etu.umontpellier.fr
