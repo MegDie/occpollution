@@ -1,6 +1,6 @@
 import pandas as pd
 from download import download
-from occpolution.io import url_db, path_target
+from occpollution.io import url_db, path_target
 
 class Load_db:
   def __init__(self, url=url_db, target_name=path_target):

@@ -1,5 +1,5 @@
 from setuptools import setup
-from occpolution import __version__ as current_version
+from occpollution import __version__ as current_version
 
 setup(
   name='occpollution',
@@ -10,6 +10,6 @@ setup(
   author_email='megane.dieval@etu.umontpellier.fr',
   license='MIT',
   packages=['occpollution', 'occpollution.map',
-   'occpollution.ani', 'occpollution.widget'],
+   'occpollution.ani', 'occpollution.widget', 'occpollution.preprocess', 'occpollution.io'],
   zip_safe=False
 )
