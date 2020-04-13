@@ -5,12 +5,25 @@ import folium
 import branca.colormap as cm
 from download import download
 
-import occpollution
-from occpollution.io import url_db, path_target
-
 def plot_interactive_map(occ_df):
-    occ_df = occpollution.Load_db().save_as_df()
-    occ_df = occ_df[occ_df['nom_poll'] == 'O3']
+    r"""
+  The plot_interactive_map function plots the data.
+
+  Input
+  -----
+    occ_df: Pandas data frame. 
+
+  Output
+  ------
+    A folium map
+
+  Example
+  -------
+
+  >> import occpollution
+  >> occpollution.map.plot_interactive_map(df)
+
+  """
     occ_df['jour'] = pd.to_datetime(occ_df['date_debut']).dt.to_period('D')
     occ_df['centrer_reduire'] = (occ_df[['valeur']] - np.mean(occ_df[['valeur']]))/ np.std(occ_df[['valeur']])
     
