@@ -25,7 +25,7 @@ The `\doc` report will contain some documentation about this project
 
 The `\report` folder contains some jupyter notebooks to display different elements like widgets, maps and soon data visualization by interactive histrograms and some analysis (using ANOVA)
 
-The report `\occpolution` will contain a package python deploying widgets and interactive maps showing pollution data of Occitanie, it is made of the subfolders:
+The report `\occpollution` will contain a package python deploying widgets and interactive maps showing pollution data of Occitanie, it is made of the subfolders:
   + `.\ani` will display a video showing the evolution of ozone pollution per dey in Occitanie 
   + `.\map` will display an interactive map showing the level of ozone in Occitanie for a day/month we choose
   + `.\widget` will display widgets comparing the level of ozone of three cities
