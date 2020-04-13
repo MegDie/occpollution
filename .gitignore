@@ -1,3 +1,5 @@
 __pycache__
 occpollution.egg-info
 dist
+.ipynb_checkpoints
+.pytest_cache
