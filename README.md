@@ -1,4 +1,6 @@
 
+![Python package](https://github.com/MegDie/occpollution/workflows/Python%20package/badge.svg)
+
 # Overview
 
 The motivation of this project is to perform some data visualization blending time and space representation of a dataset of Occitanie pollution.
