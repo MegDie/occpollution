@@ -2,6 +2,8 @@ import occpollution
 
 import webbrowser
 import os, sys
+import branca.colormap as cm
+
 
 occ_df = occpollution.Load_db().save_as_df()
 occpollution.plot_interactive_map(occpollution.get_ozone(occ_df))
