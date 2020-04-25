@@ -1,7 +1,7 @@
-Widget
+Interactive map
 ===========================
 
-blablabla
+Development
 -----------------
 
-blablabla
+The interactive map is built with folium package.
