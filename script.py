@@ -2,7 +2,6 @@ import occpollution
 
 import webbrowser
 import os, sys
-import branca.colormap as cm
 
 
 occ_df = occpollution.Load_db().save_as_df()

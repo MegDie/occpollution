@@ -2,6 +2,8 @@ import numpy as np
 from numpy import array
 import pandas as pd
 import folium
+import matplotlib.pyplot as plt
+import matplotlib.colors as colors
 import branca.colormap as cm
 
 def plot_interactive_map(occ_df):
@@ -50,7 +52,3 @@ def plot_interactive_map(occ_df):
     map.save('map_occitanie2018.html')
 
     return (map)
-
-
-
-
