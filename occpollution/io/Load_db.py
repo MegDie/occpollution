@@ -8,7 +8,7 @@ class Load_db:
   """
 
   def __init__(self, url=url_db_an, target_name=path_target_an):
-    download(url, target_name, replace=True)
+    download(url, target_name, replace=False)
   
   @staticmethod
   def save_as_df():
