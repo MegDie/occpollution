@@ -25,9 +25,7 @@ def plot_interactive_map(occ_df):
   >> occpollution.map.plot_interactive_map(df)
 
   """
-    occ_df['centrer_reduire'] = (occ_df[['valeur']] - np.mean(occ_df[['valeur']]))/ np.std(occ_df[['valeur']])
-    
-    occ_2018 = occ_df[occ_df['an'] == '2018']
+    occ_2018 = occ_df[occ_df['date'] == '2018']
     
     linear = cm.LinearColormap(
     ['green', 'yellow', 'red'],
@@ -44,7 +42,7 @@ def plot_interactive_map(occ_df):
             radius=occ_2018.iloc[i]['valeur']*100,
             color='black',
             fill=True,
-            fill_color=linear(occ_2018.iloc[i]['centrer_reduire']),
+            fill_color=linear(occ_2018.iloc[i]['standard']),
             fill_opacity=0.5,
             opacity=0.4,
             ).add_to(map)
