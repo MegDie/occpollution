@@ -40,7 +40,7 @@ def map_iteration(occ_df):
     list_day = occ_df.day.unique()
 
     for image_nb in range(len(list_day)):
-        map_video(occ_df, list_day[image_nb]).save('.//html/map_' + str(image_nb) + '.html') # save each map.html in the html folder
+        map_day(occ_df, list_day[image_nb]).save('.//html/map_' + str(image_nb) + '.html') # save each map.html in the html folder
         driver.set_window_size(4000, 3000)  # choose a resolution
         driver.get('file:///C:/Users/megan/MIND/HMMA238/occpollution/report/html/map_' + str(image_nb)+ '.html')
         time.sleep(1)
