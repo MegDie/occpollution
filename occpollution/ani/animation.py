@@ -1,6 +1,7 @@
 import selenium
 from selenium import webdriver
 import branca.colormap as cm
+import pandas as pd
 
 from occpollution.io import url_db, path_target
 from occpollution.preprocess.get_pollution import get_ozone_day
