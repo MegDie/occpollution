@@ -3,12 +3,13 @@ from selenium import webdriver
 import branca.colormap as cm
 import pandas as pd
 
+import occpollution
 from occpollution.io import url_db, path_target
 from occpollution.preprocess.get_pollution import get_ozone_day
 
  
 occ_j = pd.read_csv(path_target)
-occpollution.plot_interactive_map(occpollution.get_ozone_day(occ_j)) 
+occ_j = occpollution.get_ozone_day(occ_j) 
 
 linear4 = cm.LinearColormap(
     ['green', 'yellow', 'red'],
