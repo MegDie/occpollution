@@ -21,6 +21,5 @@ os.system("chrome "+papath)
 
 occ_j = pd.read_csv(path_target) # import data
 occ_j = occpollution.get_ozone_day(occ_j) # treatment of data
-linear = color_scale(occ_j) # color scale for the circles
 
 map_iteration(occ_j)

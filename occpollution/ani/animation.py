@@ -9,12 +9,14 @@ import matplotlib.pyplot as plt
 import occpollution
 from occpollution.io import url_db, path_target
 from occpollution.preprocess.get_pollution import get_ozone_day
+from occpollution.preprocess.get_pollution import color_scale
 
 
 def map_day(occ_df, jour):
-    
-    occ_map = occ_df[occ_df['date'] == jour]
 
+    linear = color_scale(occ_df)
+    occ_map = occ_df[occ_df['date'] == jour]
+    
     map_int4 = folium.Map(location = [43, 2.5], 
                          zoom_start = 9.5, 
                          tiles = 'Stamen Terrain')
