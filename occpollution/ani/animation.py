@@ -33,7 +33,7 @@ def map_video(jour):
             radius = 10000,
             color = 'black',
             fill = True,
-            fill_color = linear(occ_map.iloc[i]['standard']),
+            fill_color = linear4(occ_map.iloc[i]['standard']),
             fill_opacity = 0.5,
             opacity = 0.4,
         ).add_to(map_int4)
