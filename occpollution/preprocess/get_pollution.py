@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as numpy
+import numpy as np
 
 def get_ozone_an(occ_df):
     occ_df['date'] = pd.to_datetime(occ_df['date_debut']).dt.to_period('Y')
