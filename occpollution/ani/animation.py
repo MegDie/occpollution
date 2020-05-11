@@ -2,6 +2,7 @@ import selenium
 from selenium import webdriver
 import branca.colormap as cm
 import pandas as pd
+import folium
 
 import occpollution
 from occpollution.io import url_db, path_target
