@@ -8,18 +8,26 @@ Welcome to occpollution's documentation!
 
 .. toctree::
    :maxdepth: 2
+   :caption: Installation:
+
+   installation/installation
+
+
+.. toctree::
+   :maxdepth: 2
    :caption: Documentation:
 
    documentation/widget
    documentation/interactive_map
+   documentation/ANOVA
+   documentation/animation
 
 .. toctree::
    :maxdepth: 2
-   :Caption: Installation, contacts and sources
+   :Caption: Contacts and sources
 
-   install/installation
-   install/contacts
-   install/sources_more
+   others/contacts
+   others/sources
 
 
 

@@ -1,7 +1,7 @@
 import occpollution
 from occpollution.io import path_target
-from occpollution.preprocess.get_pollution import color_scale
-from occpollution.ani.animation import map_iteration 
+from occpollution.ani.animation import map_iteration
+from occpollution.ani.animation import animation
 
 import pandas as pd
 
@@ -23,3 +23,4 @@ occ_j = pd.read_csv(path_target) # import data
 occ_j = occpollution.get_ozone_day(occ_j) # treatment of data
 
 map_iteration(occ_j)
+animation(occ_j)
