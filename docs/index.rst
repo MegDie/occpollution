@@ -15,11 +15,17 @@ Welcome to occpollution's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Documentation
+   :caption: Data
 
-   documentation/widget
-   documentation/interactive_map
-   documentation/ANOVA
+   documentation/io
+   documentation/data
+   documentation/preprocess
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Visualization 
+
+   documentation/map
    documentation/animation
 
 
