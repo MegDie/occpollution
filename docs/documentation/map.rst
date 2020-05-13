@@ -1,7 +1,3 @@
-Interactive map
+Occitanie Map
 ===========================
 
-Development
------------------
-
-The interactive map is built with folium package.
