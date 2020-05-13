@@ -1,5 +1,6 @@
 
 ![Python package](https://github.com/MegDie/occpollution/workflows/Python%20package/badge.svg)
+[![Documentation Status](https://readthedocs.org/projects/occpollution/badge/?version=latest)](https://occpollution.readthedocs.io/en/latest/?badge=latest)
 
 # Overview
 
