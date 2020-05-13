@@ -20,8 +20,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'occpollution'
-copyright = '2020, Mégane Diéval, Gueladio Niasse, Jean-Baptiste Elucson'
-author = 'Mégane Diéval, Gueladio Niasse, Jean-Baptiste Elucson'
+copyright = '2020, Mégane Diéval'
+author = 'Mégane Diéval'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
@@ -55,7 +55,7 @@ add_module_names = False
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'English'
+language = 'python'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
