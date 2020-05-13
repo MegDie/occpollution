@@ -3,39 +3,29 @@
 
 # Overview
 
-The motivation of this project is to perform some data visualization blending time and space representation of a dataset of Occitanie pollution.
-
-The ultimate goal for this project is to make a video of the O3 (ozone) level across time for the cities available in the dataset.
-
-**Widget :** 
-A widget will compare, using boxplot/violins, the level of pollution across at least 3 cities from the dataset.
-
-**Map rendering :**
-A synthetic map display the degree of pollution in the cities provided. 
-
-**Harmonization :**
-Analysis jointly of the data from Montpellier and Paris (Paris 13ème)
+The motivation of this project is to perform some data visualization blending time and space representation of a dataset of Occitanie pollution and some analysis.
 
 
+# Setup
 
+Please check that all python packages in the `requirements.txt` file are installed on your computer in the correct version. 
+
+To install this package, you must run the following command in a prompt:
+
+    $ pip install git+https://github.com/MegDie/occpollution
+
+# Documentation
+
+You could find the documentation of this package [here](https://occpollution.readthedocs.io/en/latest/). Please read carefully each part you want to exploit in the package.
 
 # Structure
 
-In the `\beamer` folder, you will find soon a presentation of this work
+In the `\beamer` folder, you can find a presentation of this work.
 
-The `\doc` report will contain some documentation about this project
+The `\doc` folder contains some documentation about this project.
 
-The `\report` folder contains some jupyter notebooks to display different elements like widgets, maps and soon data visualization by interactive histrograms and some analysis (using ANOVA)
+The `\interactive_notebooks` contains part of the projet necessiting interactivity.
 
-The report `\occpollution` will contain a package python deploying widgets and interactive maps showing pollution data of Occitanie, it is made of the subfolders:
-  + `.\ani` will display a video showing the evolution of ozone pollution per dey in Occitanie 
-  + `.\map` will display an interactive map showing the level of ozone in Occitanie for a day/month we choose
-  + `.\widget` will display widgets comparing the level of ozone of three cities
+The folder `\occpollution` contains all the main code
 
-# (Co)worker(s)
-
-    Mégane Diéval, megane.dieval@etu.umontpellier.fr
-
-    Gueladio Niasse, gueladio.niasse@etu.umontpellier.fr
-
-    Jean-Baptiste Elucson, jean-baptise.elucson@etu.umontpellier.fr
+The `\report` folder contains a jupyter nootebook displaying different elements like widgets, maps and data visualization and some analysis (using ANOVA).
