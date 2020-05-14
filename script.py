@@ -21,8 +21,6 @@ os.system("chrome "+papath)
 
 occ_j = pd.read_csv(path_target) # import data
 occ_j = occpollution.get_ozone_day(occ_j) # treatment of data
-
 map_iteration(occ_j)
-
 animation()
 
