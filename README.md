@@ -9,7 +9,7 @@ The motivation of this project is to perform some data visualization blending ti
 
 # Setup
 
-Please check that all python packages in the `requirements.txt` file are installed on your computer in the correct version. 
+Please check that all python packages in the `requirements.txt` file are installed on your computer in the correct version. Read carefully the installation section in the doc to make sure everything is okay for the running of the package.
 
 To install this package, you must run the following command in a prompt:
 

@@ -10,9 +10,9 @@ How to install occpollution and make it work properly
 How to install occpollution package 
 -----------------------------------
 
-.. _Wikipedia: https://www.wikipedia.org/
+.. __Wikipedia: https://www.wikipedia.org/
 
-`__Wikipedia`
+`Wikipedia`
 
 In order to install this package, you can simply put in a prompt:
 
