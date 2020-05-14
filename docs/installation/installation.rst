@@ -1,5 +1,25 @@
-Installation
+
+How to install occpollution and make it work properly
 ===========================
+
+.. role:: bash(code)
+   :language: bash
+
+
+
+How to install occpollution package 
+-----------------------------------
+
+.. _Wikipedia: https://www.wikipedia.org/
+
+`__Wikipedia`
+
+In order to install this package, you can simply put in a prompt:
+
+.. code-block:: bash
+
+    $ pip install git+https://github.com/Megdie/occpollution
+
 
 ChromeDriver - Webdriver for Chrome
 ----------------------------
