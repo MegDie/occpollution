@@ -11,9 +11,15 @@ The motivation of this project is to perform some data visualization blending ti
 
 Please check that all python packages in the `requirements.txt` file are installed on your computer in the correct version. Read carefully the installation section in the doc to make sure everything is okay for the running of the package.
 
-To install this package, you must run the following command in a prompt:
+To install this package, you can simply run the following command in a prompt:
 
     $ pip install git+https://github.com/MegDie/occpollution
+
+I recommand to clone the entire folder, and then install it (git must be functionnal on your computer): 
+
+    $ git clone https://github.com/Megdie/occpollution
+    $ pip install /path/to/occpollution
+    
 
 # Documentation
 

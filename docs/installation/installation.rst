@@ -6,19 +6,21 @@ How to install occpollution and make it work properly
    :language: bash
 
 
-
 How to install occpollution package 
 -----------------------------------
-
-.. __Wikipedia: https://www.wikipedia.org/
-
-`Wikipedia`
 
 In order to install this package, you can simply put in a prompt:
 
 .. code-block:: bash
 
     $ pip install git+https://github.com/Megdie/occpollution
+
+I recommand to clone the entire folder, and then install it: 
+
+.. code-block:: bash
+
+    $ git clone https://github.com/Megdie/occpollution
+    $ pip install /path/to/occpollution
 
 
 ChromeDriver - Webdriver for Chrome
@@ -34,9 +36,16 @@ If you already have ChromeDriver, you should still read the following steps to m
 - Ensure Chromium/Google Chrome is installed in a recognized location (identify carefully his PATH)
 - Include the Chrome location in your PATH environment variable
 - Then, check Google's version of your computer so you can know which version of chromedriver you must install
-- Go to this website to find your own ChromeDriver file: https://chromedriver.chromium.org/downloads
+- Go to `this website`_ to find your own ChromeDriver file: 
 - Help WebDriver find the downloaded ChromeDriver executable: 
+
+.. _this website: https://chromedriver.chromium.org/downloads
+
 
 Any of these steps should do the trick:
   - include the ChromeDriver location in your PATH environment variable
   - (Python only) include the path to ChromeDriver when instantiating webdriver.Chrome (see sample below)
+
+Please find through `this link`_ a good explanation (Copyright Tanguy Lefort) to include some executables in your PATH environment variable: 
+
+.. _this link: https://github.com/bcharlier/HMMA238/blob/master/Vscode_windows.md
