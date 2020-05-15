@@ -40,7 +40,8 @@ The following function is a bit more complete then the previous one but mostly d
 
 One of the additional things is the sorting of the date. 
 In this project, the ultimate goal for this project was to make a video of the O3 (ozone) level across time for the cities available in the dataset.
-So to have a good animation, we have to order the date to have a chronologic video.
+So to have a good animation, we have to order the date to have a chronologic video. 
+We use the method `sort_values` to sort our dates.
 
 We also select the variables we care of to short the datas.
 
@@ -69,7 +70,9 @@ We also select the variables we care of to short the datas.
 
     return occ_df
 
-
+The last thing to approach in this section is the function `color scale`. We use it to have a good color scale of our circles. 
+The green color correspond to a low level of pollutant concentration and the red color to a high level, as the logic wants.
+The function identify what is the lowest and the highest value in a variable and then create a linear color scale using the method `LinearColormap` in the submodule `colormap` of the package `branca`, between this two values. 
 
 .. code-block:: python
 
