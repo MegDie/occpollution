@@ -3,7 +3,7 @@ Input/Output
 
 The first step of each element of our projet is to reach the data we exploit. 
 The following class download the data and then permit to python to read the csv file obtained to get a Pandas dataframe.
-It uses the read_csv method from Pandas package and the download method from the Download package. 
+It uses the `read_csv` method from `Pandas` package and the `download` method from the `Download` package. 
 
 .. code-block:: python
 

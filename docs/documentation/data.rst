@@ -19,6 +19,7 @@ The variables we focus on are:
 Data from the Atmo-Occitanie measurement network are available at different time steps (Annual, Monthly, Daily, Hourly).
 
 Update frequency:
+
 - For hourly data: every hour (72h / 30d / 1 year rolling)
 - For daily data: every day from 2 p.m. (1 year rolling)
 - For monthly data: First Sunday of the month for month N-1 (1 year rolling)
