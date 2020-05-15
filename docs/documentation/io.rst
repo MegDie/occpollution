@@ -27,5 +27,7 @@ It uses the read_csv method from Pandas package and the download method from the
 An important thing is that during the development of our project, the website where we got our Occitanie data changed some of his variables.
 Geographic coordinates disappeared and it was very bothering for the construction of our map (see the map section), and the dates got an unreadable format.
 That's why we had to use the most recent version of datas we had and stop the downloading of datas. 
-So please, be carefull to don't change the argument "replace=False" in the  download function at the risk to swich good data against corrupted ones.
+So please, be carefull to don't change the argument "replace=False" in the  download method, in any function of the project, at the risk to swich good datad against corrupted ones. 
+In fact, the path (path_target_an, path_target, etc.) is still connected to the url of updated data in all our functions.
+We stopped collecting the data the 2020 April 24. 
 
