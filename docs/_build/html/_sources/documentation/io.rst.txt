@@ -1,5 +1,5 @@
 Input/Output
 ===========================
 
-.. autoclass:: occpollution.io.Load_db.Load_db
+.. automodule:: occpollution.io
    :members:
