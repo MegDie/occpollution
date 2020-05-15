@@ -17,8 +17,8 @@ Welcome to occpollution's documentation!
    :maxdepth: 2
    :caption: Data
 
-   documentation/io
    documentation/data
+   documentation/io
    documentation/preprocess
 
 .. toctree::
