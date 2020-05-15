@@ -30,7 +30,7 @@ In most parts of our code, we use the module `selenium` allowing us to control t
 We chose Chrome so you need to install a very important file to manage to run this package. 
 ChromeDriver is a separate executable that Selenium WebDriver uses to control Chrome. 
 It is maintained by the Chromium team with help from WebDriver contributors. 
-If you are unfamiliar with Selenium WebDriver, you should check out `the Selenium site`_.
+If you are unfamiliar with Selenium WebDriver, you should check out `the Selenium site`_ .
 If you already have ChromeDriver, you should still read the following steps to make sure everything is okay:
 
 .. _ the Selenium site: https://www.selenium.dev/

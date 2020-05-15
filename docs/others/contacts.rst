@@ -9,5 +9,5 @@ You can also reach the contributers of this project using the emails adress righ
 
    * megane.dieval@etu.umontpellier.fr
    * gueladio.niasse@etu.umontpellier.fr
-   * jean-baptiste.elucson
+   * jean-baptiste.elucson@etu.umontpellier.fr
 
