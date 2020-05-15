@@ -1,6 +1,9 @@
 Preprocess
 ===========================
 
+Treatment of data for Occutanie map in 2018
+-----------------------------------------------
+
 Once we have our datas stocked in a Pandas dataframe (see Input/Output section), we have to edit and transform some elements.
 
 The first thing we need is a usable format of the date. 
@@ -36,6 +39,9 @@ You could find this map in the little demonstration providing by executing the `
 
     return occ_df
 
+Treatment of data for the animation
+--------------------------------------
+
 The following function is a bit more complete then the previous one but mostly do the same thing.
 
 One of the additional things is the sorting of the date. 
@@ -70,6 +76,9 @@ We also select the variables we care of to short the datas.
 
     return occ_df
 
+Function for the color scale of our map
+--------------------------------------------
+
 The last thing to approach in this section is the function `color scale`. We use it to have a good color scale of our circles. 
 The green color correspond to a low level of pollutant concentration and the red color to a high level, as the logic wants.
 The function identify what is the lowest and the highest value in a variable and then create a linear color scale using the method `LinearColormap` in the submodule `colormap` of the package `branca`, between this two values. 
@@ -86,5 +95,6 @@ The function identify what is the lowest and the highest value in a variable and
     ['green', 'yellow', 'red'],
     vmin=min(occ_df['standard']), vmax=max(occ_df['standard'])
     )
+    
     return(linear)
 
