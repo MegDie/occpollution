@@ -1,9 +1,9 @@
 Input/Output
 ===========================
 
-.. automodule:: occpollution.io
-   :members:
-
+The first step of each element of our projet is to reach the data we exploit. 
+The following class download the data and then permit to python to read the csv file obtained to get a Pandas dataframe.
+It uses the read_csv method from Pandas package and the download method from the Download package. 
 
 .. code-block:: python
 
@@ -22,3 +22,10 @@ Input/Output
     """
     df_occ = pd.read_csv(path_target_an)
     return df_occ
+
+
+An important thing is that during the development of our project, the website where we got our Occitanie data changed some of his variables.
+Geographic coordinates disappeared and it was very bothering for the construction of our map (see the map section), and the dates got an unreadable format.
+That's why we had to use the most recent version of datas we had and stop the downloading of datas. 
+So please, be carefull to don't change the argument "replace=False" in the  download function at the risk to swich good data against corrupted ones.
+
