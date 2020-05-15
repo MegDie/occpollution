@@ -31,8 +31,8 @@ In the `\beamer` folder, you can find a presentation of this work.
 
 The `\doc` folder contains some documentation about this project.
 
-The `\interactive_notebooks` contains part of the projet necessiting interactivity.
+The `\interactive_notebooks` contains part of the projet necessiting interactivity, espacially boxplot widgets and interactive maps. The interactivity allows you to choose element as pollutant, date or city to visualize the data.
 
-The folder `\occpollution` contains all the main code
+The folder `\occpollution` contains all the main code.
 
-The `\report` folder contains a jupyter nootebook displaying different elements like widgets, maps and data visualization and some analysis (using ANOVA).
+The `\report` folder contains a jupyter nootebook displaying different elements like widgets, maps and data visualization and some analysis (using ANOVA) to resume the entire project.

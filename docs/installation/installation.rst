@@ -33,8 +33,6 @@ It is maintained by the Chromium team with help from WebDriver contributors.
 If you are unfamiliar with Selenium WebDriver, you should check out the Selenium site.
 If you already have ChromeDriver, you should still read the following steps to make sure everything is okay:
 
-
-
 - Ensure Chromium/Google Chrome is installed in a recognized location (identify carefully his PATH)
 - Include the Chrome location in your PATH environment variable
 - Then, check Google's version of your computer so you can know which version of chromedriver you must install
@@ -42,7 +40,6 @@ If you already have ChromeDriver, you should still read the following steps to m
 - Help WebDriver find the downloaded ChromeDriver executable: 
 
 .. _this website: https://chromedriver.chromium.org/downloads
-
 
 Any of these steps should do the trick:
   - include the ChromeDriver location in your PATH environment variable

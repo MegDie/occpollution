@@ -16,6 +16,13 @@ The variables we focus on are:
 - "valeur" : measured value of the pollutant
 - "date_debut", "date_fin" : the date of the beginning and the end of measurement
 
+Data from the Atmo-Occitanie measurement network are available at different time steps (Annual, Monthly, Daily, Hourly).
 
-Only one year of data is available for daily data, the ones we use to code our widgets.
+Update frequency:
+- For hourly data: every hour (72h / 30d / 1 year rolling)
+- For daily data: every day from 2 p.m. (1 year rolling)
+- For monthly data: First Sunday of the month for month N-1 (1 year rolling)
+- For annual data: First quarter for year N-1 after validation (Maximum 5 years)
+
+
 
