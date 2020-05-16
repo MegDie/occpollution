@@ -26,7 +26,7 @@ def map_day(occ_df, jour):
  
     for i in range(0, len(occ_map)):
 
-        date = str(occ_map.day.iloc[1])
+        text = str(occ_map.date.iloc[1])
 
         folium.Circle(
             location = [occ_map.iloc[i]['Y'], occ_map.iloc[i]['X']],
@@ -44,7 +44,7 @@ def map_day(occ_df, jour):
              icon=DivIcon(
                  icon_size=(200,100),
                  icon_anchor=(0,0),
-                 html='<div style="font-size: 24pt">' + date + '</div>',
+                 html='<div style="font-size: 24pt">' + text + '</div>',
                  )
         ).add_to(map_int4)
     
@@ -54,7 +54,7 @@ def map_day(occ_df, jour):
 def map_iteration(occ_df):
 
     driver = selenium.webdriver.Chrome()
-    list_day = occ_df.day.unique()
+    list_day = occ_df.date.unique()
 
     path_html = os.getcwd() + '\\map_html'
     path_png = os.getcwd() + '\\map_png'

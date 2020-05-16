@@ -39,7 +39,7 @@ def plot_interactive_map(occ_df):
         folium.Circle(
             location=[occ_2018.iloc[i]['Y'], occ_2018.iloc[i]['X']],
             popup=occ_2018.iloc[i]['nom_station'],
-            radius=occ_2018.iloc[i]['valeur']*100,
+            radius=occ_2018.iloc[i]['valeur']*200,
             color='black',
             fill=True,
             fill_color=linear(occ_2018.iloc[i]['standard']),

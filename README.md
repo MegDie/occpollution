@@ -27,9 +27,11 @@ You could find the documentation of this package [here](https://occpollution.rea
 
 # Structure
 
-The `script.py` propose a short demonstration of a map we build in this projet. His execution permit to create a gif of the evolution of ozone in Occitanie (more explanations in the doc). In a prompt, you can simply run the following command:
+The `script.py` propose a short demonstration of a map we built in this projet. His execution also (and first of all) permit to create a gif of the evolution of ozone in Occitanie (more explanations in the doc). In a prompt, you can simply run the following command:
     
     $ python /path/to/script.py
+
+A map will pop into your Chrome navigator, it's the degree of ozone pollution in 2018 in Occitanie. The video is a bit long to edit, please wait about 20 minutes. Don't worry, Chrome will load some maps (362) and be very active, everything is normal. You can meanwhile read the documentation ;)
 
 In the `\beamer` folder, you can find a presentation of this work.
 

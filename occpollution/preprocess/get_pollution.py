@@ -25,7 +25,7 @@ def get_ozone_day(occ_df):
     occ_df['standard'] = (occ_df[['valeur']] - np.mean(occ_df[['valeur']]))/ np.std(occ_df[['valeur']])
     variables = ['X', 'Y', 'nom_com', 'nom_station', 'valeur', 'date', 'standard']
     occ_df = occ_df[variables]
-    occ_df = occ_df.sort_values(by = 'day', ascending = True)
+    occ_df = occ_df.sort_values(by = 'date', ascending = True)
     return occ_df
 
 
