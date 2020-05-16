@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 import branca.colormap as cm
 
+from occpollution.preprocess.get_pollution import color_scale
+
 def plot_interactive_map(occ_df):
     r"""
   The plot_interactive_map function plots the data.
@@ -27,9 +29,7 @@ def plot_interactive_map(occ_df):
   """
     occ_2018 = occ_df[occ_df['date'] == '2018']
     
-    linear = cm.LinearColormap(
-    ['green', 'yellow', 'red'],
-    vmin=-3, vmax=1)
+    linear = color_scale(occ_2018)
     
     map = folium.Map(location=[43.9333, 2.15], 
                  zoom_start=7.5, 
