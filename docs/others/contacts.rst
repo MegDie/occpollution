@@ -1,7 +1,7 @@
 Contacts
 ===========================
 
-If you have any problem, an error, a point to improve, you can fill out a pull request on `Github`_
+If you have any problem, an error or a point to improve, you can fill out a pull request on `Github`_
 
 .. _Github: https://github.com/MegDie/occpollution
 

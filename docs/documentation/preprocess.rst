@@ -1,7 +1,7 @@
 Preprocess
 ===========================
 
-Treatment of data for Occutanie map in 2018
+Treatment of data for Occitanie map in 2018
 -----------------------------------------------
 
 Once we have our datas stocked in a Pandas dataframe (see Input/Output section), we have to edit and transform some elements.

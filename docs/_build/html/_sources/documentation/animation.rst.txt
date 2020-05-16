@@ -5,23 +5,34 @@ The ultimate goal for this project is to make a video of the O3 (ozone) level ac
 Still using the `folium` package, we plot all the required map to build our animation (a gif file).
 
 Step 1: Plot all the required maps
-------------------------------
+------------------------------------
+
+In order to edit our video, we first need to get all maps of the period we study: 2019, 29 April to 2020, 24 April (refer to Input/Output section to know why).
+The following function do mostly the same as the `plot_interactive_map` function (refer to Occitanie map section).
+It's import to specify that we use the `color_scale` function (refer to preprocess section) before choosing the day to have a global scale depending on the degree of ozone pollution.  
+The difference is that we print the date on each map to locate in time during the video.
 
 .. code-block:: python
    
    def map_day(occ_df, jour):
-
+    
+    # color scale
     linear = color_scale(occ_df)
+
+    # choice of the day
     occ_map = occ_df[occ_df['date'] == jour]
     
+    # initialization of the map
     map_int4 = folium.Map(location = [43.8, 2.5], 
                          zoom_start = 7.5, 
                          tiles = 'Stamen Terrain')
  
     for i in range(0, len(occ_map)):
 
+        # storage of the date to print it on the map
         date = str(occ_map.day.iloc[1])
 
+        # same as the plot_interactive_map function
         folium.Circle(
             location = [occ_map.iloc[i]['Y'], occ_map.iloc[i]['X']],
             popup = occ_map.iloc[i]['nom_station'],
@@ -33,6 +44,7 @@ Step 1: Plot all the required maps
             opacity = 0.4,
         ).add_to(map_int4)
 
+        # date specified on the map
         folium.map.Marker(
              [44.8, 3.8],
              icon=DivIcon(
@@ -44,8 +56,8 @@ Step 1: Plot all the required maps
     
     return(map_int4)
 
-Step 2: Convert each html map into png file
----------------------------------------------
+Step 2: Convert each html map into a png file
+------------------------------------------------
 
 .. code-block:: python
 
@@ -72,7 +84,7 @@ Step 2: Convert each html map into png file
         driver.save_screenshot("map_png/folium_%s.png" % str(image_nb).zfill(3))
         plt.close('all')   
 
-Step 3: Edit the video 
+Step 3: Editing of the video 
 ----------------------------
 
 .. code-block:: python
