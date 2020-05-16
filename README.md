@@ -25,13 +25,15 @@ I recommand to clone the entire folder, and then install it (git must be functio
 
 You could find the documentation of this package [here](https://occpollution.readthedocs.io/en/latest/). Please read carefully each part you want to exploit in the package.
 
-# Structure
+# Demonstration
 
-The `script.py` propose a short demonstration of a map we built in this projet. His execution also (and first of all) permit to create a gif of the evolution of ozone in Occitanie (more explanations in the doc). In a prompt, you can simply run the following command:
+The `script.py` propose a short demonstration of a map we built in this projet. His execution also (and first of all) permit to create a gif of the evolution of ozone in Occitanie (more explanations in the doc). Please, read and follow the entire [installation section](https://occpollution.readthedocs.io/en/latest/installation/installation.html) in the doc before executing this script. In a prompt, you can simply run the following command:
     
     $ python /path/to/script.py
 
-A map will pop into your Chrome navigator, it's the degree of ozone pollution in 2018 in Occitanie. The video is a bit long to edit, please wait about 20 minutes. Don't worry, Chrome will load some maps (362) and be very active, everything is normal. You can meanwhile read the documentation ;)
+A map will first pop into your Chrome navigator, it's the degree of ozone pollution in 2018 in Occitanie. You need to close the first map to be abble to watch the animation. The GIF is a bit long to edit, please wait about 20 minutes. Don't worry, Chrome will load some maps (362) and be very active, everything is normal. You can meanwhile read the documentation or have a drink ;)
+
+# Structure
 
 In the `\beamer` folder, you can find a presentation of this work.
 
