@@ -27,6 +27,10 @@ You could find the documentation of this package [here](https://occpollution.rea
 
 # Structure
 
+The `script.py` propose a short demonstration of a map we build in this projet. His execution permit to create a gif of the evolution of ozone in Occitanie (more explanations in the doc). In a prompt, you can simply run the following command:
+    
+    $ python /path/to/script.py
+
 In the `\beamer` folder, you can find a presentation of this work.
 
 The `\doc` folder contains some documentation about this project.
@@ -35,4 +39,4 @@ The `\interactive_notebooks` contains part of the projet necessiting interactivi
 
 The folder `\occpollution` contains all the main code.
 
-The `\report` folder contains a jupyter nootebook displaying different elements like widgets, maps and data visualization and some analysis (using ANOVA) to resume the entire project.
+The `\report` folder contains a jupyter nootebook displaying different elements like widgets, maps, data visualization and some analysis (using ANOVA) to resume the entire project.
