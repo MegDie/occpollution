@@ -4,7 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Data import and process
 
 # Montpellier data
 occitanie = pd.read_csv("datasets/Mesure_journaliere_Region_Occitanie_Polluants_Principaux.csv", sep="," , header=0)
@@ -57,6 +56,7 @@ paris_NO2_df = paris.groupby('date').agg({'NO2':'mean'})
 par['NO2'] = paris_NO2_df['NO2']
 par = par [variables]
 
+# plot the data 
 def plot_lines():
     plt.figure(figsize=(15,5))
     plt.subplot(1, 2, 1)
@@ -72,7 +72,7 @@ def plot_lines():
     #plt.show()
     plt.tight_layout()
 
-
+# boxplot with interactivity
 def boxplot_widget(pollutant):
 
     df_villes = pd.concat([mtp, par])
@@ -88,8 +88,23 @@ def boxplot_widget(pollutant):
     plt.title(pollutant + " measurement between 04/2019 and 04/2020")
     plt.show()
 
+# data for anova
 df_villes = pd.concat([mtp, par])
 df_ANOVA = df_villes[['nom_com', 'O3', 'NO2']]
+
+# containment data
+occitanie = pd.read_csv("datasets/Mesure_journaliere_Region_Occitanie_Polluants_Principaux.csv", sep="," , header=0)
+mtp_df = occitanie[occitanie['nom_com'] == 'MONTPELLIER']
+mtp_df['date'] = pd.to_datetime(mtp_df['date_debut']).dt.to_period('D')
+mtp_df = mtp_df.sort_values(by = 'date', ascending = True)
+variables = ['nom_com', 'nom_station', 'nom_poll', 'valeur', 'date' ]
+mtp_df = mtp_df[variables]
+mtp_df = mtp_df.iloc[3649:5388,]
+mtp_df
+
+
+
+
 
 
 

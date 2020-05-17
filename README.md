@@ -9,7 +9,12 @@ The motivation of this project is to perform some data visualization blending ti
 
 # Setup
 
-Please check that all python packages in the `requirements.txt` file are installed on your computer in the correct version. Read carefully the installation section in the doc to make sure everything is okay for the running of the package.
+Please check that all python packages in the `requirements.txt` file are installed on your computer in the correct version. To be sure every dependencies are installed in the right version you can simply run in a prompt:
+
+    $ pip install -r requirements.txt
+
+
+Read carefully the installation section in the doc to make sure everything is okay for the running of the package.
 
 To install this package, you can simply run the following command in a prompt:
 
@@ -27,11 +32,14 @@ You could find the documentation of this package [here](https://occpollution.rea
 
 # Demonstration
 
-The `script.py` propose a short demonstration of a map we built in this projet. His execution also (and first of all) permit to create a gif of the evolution of ozone in Occitanie (more explanations in the doc). Please, read and follow the entire [installation section](https://occpollution.readthedocs.io/en/latest/installation/installation.html) in the doc before executing this script. In a prompt, you can simply run the following command:
-    
-    $ python /path/to/script.py
+The execution of the `animation.py` file permit to create a gif of the evolution of ozone in Occitanie (more explanations in the doc). Please, read and follow the entire [installation section](https://occpollution.readthedocs.io/en/latest/installation/installation.html) in the doc before executing this script. 
 
-A map will first pop into your Chrome navigator, it's the degree of ozone pollution in 2018 in Occitanie. You need to close the first map to be abble to watch the animation. The GIF is a bit long to edit, please wait about 20 minutes. Don't worry, Chrome will load some maps (362) and be very active, everything is normal. You can meanwhile read the documentation or have a drink ;)
+In a prompt, you can simply run the following command:
+    
+    $ python /path/to/animation.py
+
+
+The GIF is a bit long to edit, please wait about 20 minutes. Don't worry, Chrome will load some maps (362) and be very active, everything is normal. You can meanwhile read the documentation or have a drink ;)
 
 # Structure
 
