@@ -3,6 +3,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import folium
+import branca.colormap as cm
+import numpy as np
 
 
 # Montpellier data
@@ -97,7 +100,7 @@ occitanie = pd.read_csv("datasets/Mesure_journaliere_Region_Occitanie_Polluants_
 mtp_df = occitanie[occitanie['nom_com'] == 'MONTPELLIER']
 mtp_df['date'] = pd.to_datetime(mtp_df['date_debut']).dt.to_period('D')
 mtp_df = mtp_df.sort_values(by = 'date', ascending = True)
-variables = ['nom_com', 'nom_station', 'nom_poll', 'valeur', 'date' ]
+variables = ['nom_com', 'nom_station', 'nom_poll', 'valeur', 'date', 'X', 'Y']
 mtp_df = mtp_df[variables]
 mtp_df = mtp_df.iloc[3649:5388,] # only 2020
 mtp_df = mtp_df[mtp_df['nom_poll']!='NOX as NO2'] # no data for NOX
@@ -133,6 +136,43 @@ def plot_2020(poll):
         mtp_poll[mtp_poll['nom_station']=='Montpellier - Pompignane Trafic'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'pink', label = 'Montpellier - Pompignane Trafic')
         plt.title(poll + " evolution over time since the beginning of the year")
         plt.tight_layout()
+
+
+# occitanie data for the map
+occitanie_df = pd.read_csv("datasets/Mesure_journaliere_Region_Occitanie_Polluants_Principaux.csv", sep="," , header=0)
+occitanie_df['date'] = pd.to_datetime(occitanie_df['date_debut']).dt.to_period('D')
+occitanie_df = occitanie_df.sort_values(by = 'date', ascending = True)
+
+def interactive_map(jour, poll):
+    
+    occ_day = occitanie_df[occitanie_df['nom_poll'] == poll]
+    
+    linear = cm.LinearColormap(
+        ['green', 'yellow', 'red'],
+        vmin=min(occ_day['valeur']), vmax=max(occ_day['valeur'])
+)
+    
+    occ_day = occ_day[occ_day['date'] == jour]
+    
+
+    
+    map_conf = folium.Map(location = [43, 2.15], 
+                         zoom_start = 7.4, 
+                         tiles = 'Stamen Terrain')
+    
+    for i in range(0, len(occ_day)):
+        folium.Circle(
+            location = [occ_day.iloc[i]['Y'], occ_day.iloc[i]['X']],
+            popup = occ_day.iloc[i]['nom_station'],
+            radius = occ_day.iloc[i]['valeur']*300,
+            color = 'black',
+            fill = True,
+            fill_color = linear(occ_day.iloc[i]['valeur']),
+            fill_opacity = 0.5,
+            opacity = 0.4,
+        ).add_to(map_conf)
+    
+    return(map_conf)
 
 
 
