@@ -61,13 +61,13 @@ def plot_lines():
     plt.figure(figsize=(15,5))
     plt.subplot(1, 2, 1)
     ax = plt.gca()
-    par.plot(kind='line',x='date',y='O3',ax=ax, color = 'pink', label = 'Paris 13')
-    mtp.plot(kind='line',x='date',y='O3', color='orange', ax=ax, label = "Montpellier prés d'Arènes")
+    par.plot(kind='line', x='date', y='O3', ax=ax, color='pink', label='Paris 13')
+    mtp.plot(kind='line', x='date', y='O3', color='orange', ax=ax, label="Montpellier (prés d'Arènes)")
     plt.title("O3 evolution over months between April 2019 and April 2020")
     plt.subplot(1, 2, 2)
     ax = plt.gca()
-    par.plot(kind='line',x='date',y='NO2',ax=ax, color = 'pink', label = 'Paris 13')
-    mtp.plot(kind='line',x='date',y='NO2', color='orange', ax=ax, label = 'Montpellier Chaptal')
+    par.plot(kind='line', x='date', y='NO2', ax=ax, color='pink', label='Paris 13')
+    mtp.plot(kind='line', x='date', y='NO2', color='orange', ax=ax, label='Montpellier (Chaptal)')
     plt.title("NO2 evolution over months between April 2019 and April 2020")
     #plt.show()
     plt.tight_layout()
@@ -99,8 +99,41 @@ mtp_df['date'] = pd.to_datetime(mtp_df['date_debut']).dt.to_period('D')
 mtp_df = mtp_df.sort_values(by = 'date', ascending = True)
 variables = ['nom_com', 'nom_station', 'nom_poll', 'valeur', 'date' ]
 mtp_df = mtp_df[variables]
-mtp_df = mtp_df.iloc[3649:5388,]
-mtp_df
+mtp_df = mtp_df.iloc[3649:5388,] # only 2020
+mtp_df = mtp_df[mtp_df['nom_poll']!='NOX as NO2'] # no data for NOX
+
+
+def plot_2020(poll):
+    
+    mtp_poll = mtp_df[mtp_df['nom_poll']==poll]
+    
+    if poll=='NO2':
+        ax = plt.gca()
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Pompignane Trafic'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'pink', label = 'Montpellier - Pompignane Trafic')
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Chaptal Urbain'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'orange', label = 'Montpellier - Chaptal Urbain')
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Prés d Arènes Urbain'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'green', label = 'Montpellier - Prés d Arènes Urbain')
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Saint Denis Trafic'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'yellow', label = 'Montpellier - Saint Denis Trafic')
+        plt.title(poll + " evolution over time since the beginning of the year")
+        plt.tight_layout()
+    elif poll=='NO':
+        ax = plt.gca()
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Pompignane Trafic'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'pink', label = 'Montpellier - Pompignane Trafic')
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Chaptal Urbain'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'orange', label = 'Montpellier - Chaptal Urbain')
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Prés d Arènes Urbain'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'green', label = 'Montpellier - Prés d Arènes Urbain')
+        plt.title(poll + " evolution over time since the beginning of the year")
+        plt.tight_layout()
+    elif poll=='O3':
+        ax = plt.gca()
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Prés d Arènes Urbain'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'green', label = 'Montpellier - Prés d Arènes Urbain')
+        plt.title(poll + " evolution over time since the beginning of the year")
+        plt.tight_layout()
+    else:
+        ax = plt.gca()
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Prés d Arènes Urbain'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'green', label = 'Montpellier - Prés d Arènes Urbain')
+        mtp_poll[mtp_poll['nom_station']=='Montpellier - Pompignane Trafic'].plot(kind='line', x='date', y='valeur', ax=ax, color = 'pink', label = 'Montpellier - Pompignane Trafic')
+        plt.title(poll + " evolution over time since the beginning of the year")
+        plt.tight_layout()
+
 
 
 
