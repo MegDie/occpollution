@@ -39,7 +39,7 @@ In a prompt, you can simply run the following command:
     $ python /path/to/animation.py
 
 
-The GIF is a bit long to edit, please wait about 20 minutes. Don't worry, Chrome will load some maps (362) and be very active, everything is normal. You can meanwhile read the documentation or have a drink ;)
+The GIF is a bit long to edit, please wait about 20 minutes. Don't worry, Chrome will load some maps (362) and be very active, everything is normal. You can meanwhile read the documentation or have a drink ;) You will maybe need to right click in the prompt if things don't progress! 
 
 # Structure
 
