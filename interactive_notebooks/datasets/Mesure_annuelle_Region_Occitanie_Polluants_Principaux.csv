@@ -1,4 +1,4 @@
-﻿X,Y,nom_dept,nom_com,insee_com,nom_station,code_station,typologie,influence,nom_poll,id_poll_ue,valeur,unite,metrique,date_debut,date_fin,statut_valid,x_l93,y_l93,ObjectId
+X,Y,nom_dept,nom_com,insee_com,nom_station,code_station,typologie,influence,nom_poll,id_poll_ue,valeur,unite,metrique,date_debut,date_fin,statut_valid,x_l93,y_l93,ObjectId
 1.41861,43.5756,HAUTE-GARONNE,TOULOUSE,31555,Toulouse-Jacquier Urbain,FR50004,Urbaine,Fond,NO,38,7.4,ug.m-3,annuelle,2018-01-01T01:00:00.000Z,2019-01-01T00:00:00.000Z,t,572227,6276450,1
 1.41861,43.5756,HAUTE-GARONNE,TOULOUSE,31555,Toulouse-Jacquier Urbain,FR50004,Urbaine,Fond,NO,38,9.6,ug.m-3,annuelle,2017-01-01T01:00:00.000Z,2018-01-01T00:00:00.000Z,t,572227,6276450,2
 1.41861,43.5756,HAUTE-GARONNE,TOULOUSE,31555,Toulouse-Jacquier Urbain,FR50004,Urbaine,Fond,NO2,8,17.6,ug.m-3,annuelle,2018-01-01T01:00:00.000Z,2019-01-01T00:00:00.000Z,t,572227,6276450,3
