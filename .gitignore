@@ -3,5 +3,4 @@ occpollution.egg-info
 dist
 .ipynb_checkpoints
 .pytest_cache
-*.html
 .log
