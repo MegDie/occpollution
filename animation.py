@@ -4,8 +4,7 @@ from occpollution.ani.animation import map_iteration
 from occpollution.ani.animation import animation
 import pandas as pd
 import webbrowser
-import os 
-import sys
+import os, sys
 
 # The following lines create a video of the ozone evolution in Occitania during the last year
 
