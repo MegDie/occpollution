@@ -1,4 +1,4 @@
-﻿X,Y,nom_dept,nom_com,insee_com,nom_station,code_station,typologie,influence,nom_poll,id_poll_ue,valeur,unite,metrique,date_debut,date_fin,statut_valid,x_l93,y_l93,ObjectId
+X,Y,nom_dept,nom_com,insee_com,nom_station,code_station,typologie,influence,nom_poll,id_poll_ue,valeur,unite,metrique,date_debut,date_fin,statut_valid,x_l93,y_l93,ObjectId
 1.4496,43.574,HAUTE-GARONNE,TOULOUSE,31555,Toulouse-Périphérique Trafic,FR50048,Urbaine,Trafic,NO,38,59.7,ug.m-3,mensuelle,2018-08-01T01:00:00.000Z,2018-09-01T00:00:00.000Z,t,573544,6276247,1001
 1.4496,43.574,HAUTE-GARONNE,TOULOUSE,31555,Toulouse-Périphérique Trafic,FR50048,Urbaine,Trafic,NO,38,78.8,ug.m-3,mensuelle,2018-09-01T01:00:00.000Z,2018-10-01T00:00:00.000Z,t,573544,6276247,1002
 1.4496,43.574,HAUTE-GARONNE,TOULOUSE,31555,Toulouse-Périphérique Trafic,FR50048,Urbaine,Trafic,NO,38,85.3,ug.m-3,mensuelle,2018-10-01T01:00:00.000Z,2018-11-01T00:00:00.000Z,t,573544,6276247,1003
